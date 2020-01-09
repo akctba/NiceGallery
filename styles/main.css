@@ -2,4 +2,12 @@
   font-family: 'Lobster', cursive;
   text-align: center;
 }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */
