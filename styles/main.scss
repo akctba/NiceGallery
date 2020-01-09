@@ -2,6 +2,56 @@
 // Alex's style
 
 // Bianca's style
+.bcm-content {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-areas:    "main sidebar";
+
+    .bcm-main {
+        grid-area: main;
+        padding: 2%;
+        background-color: #F5F5F5;
+
+        img {
+            height: auto;
+            width: 95%;
+            overflow: hidden; 
+            margin: 2%;
+        }
+    }
+
+    .bcm-sidebar {
+        grid-area: sidebar;
+        padding: 2%;
+        background-color: #EBEBEB;
+
+        .bcm-comments {
+            padding: 2%;
+            display: grid;
+            grid-template-columns: 2fr 5fr;
+            grid-template-areas:    "img user"
+                                    ". comment";
+            
+            img {
+                grid-area: img;
+                object-fit: cover;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+
+            h4 {
+                grid-area: user;
+            }
+
+            p {
+                grid-area: comment;
+            }
+        }
+    }
+}
 
 // Chris' style
 #head{

@@ -1,3 +1,68 @@
+.bcm-content {
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 2fr;
+      grid-template-columns: 5fr 2fr;
+      grid-template-areas: "main sidebar";
+}
+
+.bcm-content .bcm-main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main;
+  padding: 2%;
+  background-color: #F5F5F5;
+}
+
+.bcm-content .bcm-main img {
+  height: auto;
+  width: 95%;
+  overflow: hidden;
+  margin: 2%;
+}
+
+.bcm-content .bcm-sidebar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: sidebar;
+  padding: 2%;
+  background-color: #EBEBEB;
+}
+
+.bcm-content .bcm-sidebar .bcm-comments {
+  padding: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 5fr;
+      grid-template-columns: 2fr 5fr;
+      grid-template-areas: "img user" ". comment";
+}
+
+.bcm-content .bcm-sidebar .bcm-comments img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.bcm-content .bcm-sidebar .bcm-comments h4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: user;
+}
+
+.bcm-content .bcm-sidebar .bcm-comments p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: comment;
+}
+
 #head {
   font-family: 'Lobster', cursive;
   text-align: center;
