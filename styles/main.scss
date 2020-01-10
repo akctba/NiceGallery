@@ -240,6 +240,7 @@ and (max-width : 415px) {
     top:0;
     background-color: $color2;
     text-align: center;
+    z-index:999;
 }
 .head{
     color:$color5;
@@ -264,6 +265,7 @@ nav{
     background-color: $nav_bg_color;
     border-bottom:1px solid gray;
     padding-top:1%
+    
 }
 .head_ul{
     list-style-type: none;
@@ -514,3 +516,74 @@ a:hover{
 
 
 // Peri's style
+.title{
+    text-align: left;
+    font-family: $font-family1;
+    color: $color4;
+}
+
+.heading{
+    text-align: center;
+    font-family: $font-family1;
+    color: $color4;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    'area1 area2'
+}
+
+.area1{
+    grid-area: area1;
+}
+
+.area1img{
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 60%;
+}
+
+.area2{
+    grid-area: area2;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.label{
+    text-align: left;
+    font-family: $font-family1;
+    color: $color4;
+    margin: 10px 0px 0px;
+}
+
+.input1{
+    background-color: $color6;
+    width: 70%;
+    height: 20px;
+    // padding: 20px;
+}
+
+.input2{
+    background-color: $color6;
+    width: 70%;
+    height: 60px;
+    // padding: 70%;
+}
+
+.button{
+    text-align: center;
+    // background-color: $color4;
+    font-family: $font-family1;
+    color: $color5;
+    // display: inline-block;
+    width: 80px;
+
+    display: flex;
+
+    div{
+        width: 80px;
+        padding: 10px;
+        background-color: $color6;
+        margin: 20px;
+    }
+}
