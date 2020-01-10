@@ -2,4 +2,145 @@
   font-family: 'Lobster', cursive;
   text-align: center;
 }
+
+.firstBoxHH a {
+  text-decoration: none;
+}
+
+.titleTagHH {
+  color: black;
+}
+
+.titleTagHH:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: cornflowerblue;
+          text-decoration-color: cornflowerblue;
+}
+
+.mainTagHH, .authorTagHH, .dateTagHH {
+  color: gray;
+}
+
+.mainTagHH:hover, .authorTagHH:hover, .dateTagHH:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: gray;
+          text-decoration-color: gray;
+}
+
+.categoryTagHH {
+  color: lightskyblue;
+}
+
+.categoryTagHH:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: lightblue;
+          text-decoration-color: lightblue;
+}
+
+.boxOneHH {
+  margin: 0 auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.boxOneHH img {
+  width: 40%;
+}
+
+.firstBoxHH {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 5px;
+}
+
+.bottomTagHH {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.smallBoxHH {
+  width: 32%;
+  height: 500px;
+  margin: 2px;
+}
+
+.smallBoxHH img {
+  width: 100%;
+}
+
+.smallBoxHH a {
+  text-decoration: none;
+}
+
+.bigBoxHH {
+  margin: 5px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .containerHH {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boxOneHH {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boxOneHH img {
+    width: 100%;
+  }
+  .firstBoxHH {
+    width: 100%;
+    margin-bottom: 160px;
+  }
+  .bigBoxHH {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 500px;
+  }
+  .bigBoxTwoHH {
+    margin-top: 1300px;
+  }
+  .smallBoxHH {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .smallBoxHH img {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

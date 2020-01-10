@@ -10,4 +10,122 @@
 }
 // Henry's style
 
+.firstBoxHH{
+    a{
+        text-decoration: none;
+    }
+}
+
+.titleTagHH{
+    color: black;
+}
+
+.titleTagHH:hover{
+    text-decoration: underline;
+    text-decoration-color: cornflowerblue;
+}
+
+.mainTagHH, .authorTagHH, .dateTagHH{
+    color: gray;
+} 
+
+.mainTagHH:hover, .authorTagHH:hover, .dateTagHH:hover{
+    text-decoration: underline;
+    text-decoration-color: gray;
+} 
+
+.categoryTagHH{
+    color: lightskyblue;
+}
+
+.categoryTagHH:hover{
+    text-decoration: underline;
+    text-decoration-color: lightblue;
+}
+
+.boxOneHH{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img{
+        width: 40%;
+    }
+}
+
+
+.firstBoxHH{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+.bottomTagHH{
+    align-self: baseline;
+}
+
+.smallBoxHH{
+    width: 32%;
+    height: 500px;
+
+    margin: 2px;
+
+    img{
+        width: 100%;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.bigBoxHH{
+    margin: 5px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+    .containerHH{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .boxOneHH{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+
+    .firstBoxHH{
+        width: 100%;
+        margin-bottom: 160px;
+    }
+
+    .bigBoxHH{
+        flex-direction: column;
+        margin-top: 500px;
+    }
+
+    .bigBoxTwoHH{
+        margin-top: 1300px;
+    }
+
+    .smallBoxHH{
+        width: 100%;
+        margin-bottom: 100px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
 // Peri's style
