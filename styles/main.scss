@@ -234,23 +234,22 @@ and (max-width : 415px) {
 
 // Chris' style
 /**   header  **/
-#headcontainer{
+.headcontainer{
     position: fixed;
     width:100%;
     top:0;
     background-color: $color2;
-   
-    
+    text-align: center;
 }
-#head{
+.head{
     color:$color5;
 }
-h1{
-    font-family: 'Lobster', cursive;
+.h_h1{
+    font-family: $font-family2;
     margin-top:1%;
     margin-left:45%;
 }
-#icon_link{
+.icon_link{
     margin-top:1%;
     margin-left:10%;
     margin-right:auto;
@@ -258,23 +257,45 @@ h1{
 header{
    display: flex;
    text-align: center;
-    font-family: $font-family2;
-    text-align: center;
+   font-family: $font-family2;
 }
 nav{
     display: flex;
     background-color: $nav_bg_color;
     border-bottom:1px solid gray;
+    padding-top:1%
 }
-ul{
+.head_ul{
     list-style-type: none;
     display: flex;
     margin: 0 auto;
-    margin-right:15%;
-    
+    padding-left:10%;
 }
-li{
-    padding:10px;
+.li_one{
+    margin:0 100px; 
+    padding-bottom: 0px;
+    grid-area: li_one;
+}
+.li_two{
+    margin:0 10px;
+    grid-area: li_two;
+}
+.li_three{
+    margin:0 10px;
+    grid-area: li_three;
+}
+.li_four{
+    margin:0 100px;
+    padding-bottom: 0px;
+    grid-area: li_four;
+}
+.li_five{
+    margin:0 100px;
+    padding-bottom: 0px;
+    grid-area: li_five;
+}
+.li_six{
+    margin:0 10px;
 }
 a{
     text-decoration: none;
@@ -291,26 +312,206 @@ a:active{
 a:hover{
     color:$color1;
 }
-#search{
+.search{
     width:150px;
-    height:30px;
-    margin-right:3%;
+    height:25px;
+    margin-right:3%;    
 }
-/*
-p{
-    padding-top:100px;
-}
-*/
 /**   footer  **/
     footer{
         background-color: $color4;
         text-align: center;
-         
+        width:100%;
+    }
+    .fp{
+        display: flex;
+    }
+    .foot_ul{
+        margin:0 auto;
+        list-style-type: none;
+        display: flex;
+    }
+    .lione{
+        width:50px;
+        margin:10px;
+    }
+    .litwo{
+        width:180px; 
+        margin:10px; 
+    }
+    .lithree{
+        width:150px;
+        margin-top:20px;
+        
+    }
+    .lifour{
+        width:130px;
+        margin:10px;
+    }
+@media screen and(max-width:415px){
+    .h_h1{
+        width:100%;
+        margin-left:-10px;
+    }
+    .icon_link{
+        width:100%;
+        margin-right:0;
+    }
+    .foot_ul{
+        text-align: center;
+        flex-direction: column;
+    }
+    .lione{
+        margin: 0 auto;
+    }
+    .litwo{
+        margin: 0 auto;
+    }
+    .lithree{
+        margin: 0 auto;
+    }
+    .lifour{
+        margin: 0 auto;
+    }
+    .fpimg{
+        margin-left:15%;
+    }
+    footer{
+        margin-right:15%;
+    }
+    .head_ul{
+        display: grid;
+        grid-auto-columns: 1fr;
+        flex-direction: column;
+        grid-template-areas: "li_one"
+                             "li_two"
+                             "li_three"
+                             "li_four"
+                             "li_five";
+    }
+    nav{
+        margin:0 auto;
+    }
+}
+// Henry's style
+
+.firstBoxHH{
+    a{
+        text-decoration: none;
+    }
+}
+
+.titleTagHH{
+    color: black;
+}
+
+.titleTagHH:hover{
+    text-decoration: underline;
+    text-decoration-color: cornflowerblue;
+}
+
+.mainTagHH, .authorTagHH, .dateTagHH{
+    color: gray;
+} 
+
+.mainTagHH:hover, .authorTagHH:hover, .dateTagHH:hover{
+    text-decoration: underline;
+    text-decoration-color: gray;
+} 
+
+.categoryTagHH{
+    color: lightskyblue;
+}
+
+.categoryTagHH:hover{
+    text-decoration: underline;
+    text-decoration-color: lightblue;
+}
+
+.boxOneHH{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img{
+        width: 40%;
+    }
+}
+
+
+.firstBoxHH{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+.bottomTagHH{
+    align-self: baseline;
+}
+
+.smallBoxHH{
+    width: 32%;
+    height: 500px;
+
+    margin: 2px;
+
+    img{
+        width: 100%;
     }
 
+    a{
+        text-decoration: none;
+    }
+}
+
+.bigBoxHH{
+    margin: 5px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+    .containerHH{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .boxOneHH{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+
+    .firstBoxHH{
+        width: 100%;
+        margin-bottom: 160px;
+    }
+
+    .bigBoxHH{
+        flex-direction: column;
+        margin-top: 500px;
+    }
+
+    .bigBoxTwoHH{
+        margin-top: 1300px;
+    }
+
+    .smallBoxHH{
+        width: 100%;
+        margin-bottom: 100px;
+        img{
+            width: 100%;
+        }
+    }
+}
 
 
-// Henry's style
 
 // Peri's style
 .title{
