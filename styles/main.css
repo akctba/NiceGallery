@@ -326,4 +326,82 @@ footer {
   background-color: #757575;
   text-align: center;
 }
+
+.title {
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  color: #757575;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: #757575;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+      grid-template-areas: 'area1 area2';
+}
+
+.area1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: area1;
+}
+
+.area1img {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 60%;
+}
+
+.area2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: area2;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.label {
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  color: #757575;
+  margin: 10px 0px 0px;
+}
+
+.input1 {
+  background-color: #cdc9c9;
+  width: 70%;
+  height: 20px;
+}
+
+.input2 {
+  background-color: #cdc9c9;
+  width: 70%;
+  height: 60px;
+}
+
+.button {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: #020100;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button div {
+  width: 80px;
+  padding: 10px;
+  background-color: #cdc9c9;
+  margin: 20px;
+}
 /*# sourceMappingURL=main.css.map */
