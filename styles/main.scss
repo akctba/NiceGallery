@@ -4,8 +4,203 @@ body{
     padding-top:105px;
     width:100%
 }
-// Alex's style
 
+/* Constants */
+$font-family1: 'Nunito', sans-serif;
+$font-family2: 'Lobster', cursive;
+
+// Alex's style
+.category-title-box {
+    background-color: $color2;
+    font-family: $font-family1;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .category-title {
+        text-align: center;
+    }
+}
+
+.category-nav {
+    background-color: darken($color2, 1%);
+    padding: 20px 0;    
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* fixing on top */
+    top: 0;
+    position: sticky;
+   
+    .category-left {
+        text-align: left;
+        a {
+            color: $color5;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $color1;
+        }
+    }
+    
+    .category-center {
+        text-align: center;
+    }
+    
+    .category-right {
+        text-align: right;
+        a {
+            color: $color5;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $color1;
+        }
+    }
+}
+
+.category-container {
+    background-color: $color2;
+    font-family: $font-family1;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .category-item {
+        margin: 0 auto;
+        padding: 30px 0;
+
+        .category-author {
+            font-size: 0.8em;
+            color: $color4;
+        }
+
+        .image-heading:hover {
+            color: $color1;
+        }
+    }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (max-width : 740px) {
+
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 415px) {
+
+    .category-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+// Bianca's style
+.bcm-content {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-areas: "main sidebar";
+    font-family: $font-family1;
+
+    .bcm-main {
+        grid-area: main;
+        padding: 2%;
+        background-color: #F5F5F5;
+
+        img {
+            height: auto;
+            width: 95%;
+            overflow: hidden; 
+            margin: 2%;
+        }
+    }
+
+    .bcm-sidebar {
+        grid-area: sidebar;
+        // display: flex;
+        // flex-direction: row;
+        padding: 3%;
+        background-color: #EBEBEB;
+        position: relative;
+
+        .bcm-comments {
+            // height: auto;
+            overflow-y: scroll;
+
+            hr {
+                width: 85%;
+                color: #757575;
+            }
+
+            .bcm-ind-comment {
+                padding: 2%;
+                display: grid;
+                grid-template-columns: 2fr 5fr;
+                grid-template-areas:    "img user"
+                                        ". comment";
+                
+                img {
+                    grid-area: img;
+                    object-fit: cover;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin: 10px -10px 5px 10px;
+                }
+
+                h4 {
+                    grid-area: user;
+                    margin: 10px 0px 10px 0px;
+                    font-family: $font-family1;
+                    font-weight: 800;
+                }
+
+                p {
+                    grid-area: comment;
+                    margin: -25px 10px 10px 0px;
+                    font-family: $font-family1;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .bcm-commentbox {
+            height: 200px;
+            width: 90%;
+            position: absolute; 
+            bottom: 0; 
+
+            input[type=text] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid #757575;
+                border-radius: 5px;
+            }
+        }
+
+    }
+}
 
 // Chris' style
 /**   header  **/
@@ -33,6 +228,8 @@ h1{
 header{
    display: flex;
    text-align: center;
+    font-family: $font-family2;
+    text-align: center;
 }
 nav{
     display: flex;
