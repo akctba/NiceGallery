@@ -181,7 +181,7 @@ body {
   display: grid;
   -ms-grid-columns: 2fr 5fr;
       grid-template-columns: 2fr 5fr;
-      grid-template-areas: "img user" ". comment";
+      grid-template-areas: "img user" ". comment";
 }
 
 .bcm-content .bcm-sidebar .bcm-comments .bcm-ind-comment img {
@@ -232,7 +232,7 @@ body {
   .bcm-content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "main" "sidebar";
+        grid-template-areas: "main" "sidebar";
   }
 }
 
@@ -429,7 +429,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-        grid-template-areas: "li_one" "li_two" "li_three" "li_four" "li_five";
+        grid-template-areas: "li_one" "li_two" "li_three" "li_four" "li_five";
   }
   nav {
     margin: 0 auto;
