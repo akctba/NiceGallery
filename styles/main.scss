@@ -294,6 +294,9 @@ nav{
     padding-bottom: 0px;
     grid-area: li_five;
 }
+.li_six{
+    margin:0 10px;
+}
 a{
     text-decoration: none;
 }
@@ -376,7 +379,7 @@ a:hover{
     footer{
         margin-right:15%;
     }
-    nav{
+    .head_ul{
         display: grid;
         grid-auto-columns: 1fr;
         flex-direction: column;
@@ -385,7 +388,9 @@ a:hover{
                              "li_three"
                              "li_four"
                              "li_five";
-
+    }
+    nav{
+        margin:0 auto;
     }
 }
 // Henry's style
