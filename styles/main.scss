@@ -213,13 +213,21 @@ and (max-width : 415px) {
     }
 }
 
-/* Smartphones (portrait) ----------- */
+
 @media only screen 
 and (max-width : 415px) {
     .bcm-content {
         grid-template-columns: 1fr;
         grid-template-areas: "main"
                             "sidebar";
+    }
+}
+
+@media only screen 
+and (max-width : 740px) {
+    .bcm-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "main sidebar";
     }
 }
 
