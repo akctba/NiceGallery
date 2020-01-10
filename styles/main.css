@@ -315,6 +315,10 @@ nav {
   grid-area: li_five;
 }
 
+.li_six {
+  margin: 0 10px;
+}
+
 a {
   text-decoration: none;
 }
@@ -416,7 +420,7 @@ footer {
   footer {
     margin-right: 15%;
   }
-  nav {
+  .head_ul {
     display: -ms-grid;
     display: grid;
     grid-auto-columns: 1fr;
@@ -425,6 +429,9 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
         grid-template-areas: "li_one" "li_two" "li_three" "li_four" "li_five";
+  }
+  nav {
+    margin: 0 auto;
   }
 }
 
