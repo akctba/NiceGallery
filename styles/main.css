@@ -121,14 +121,16 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: main;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
   padding: 2%;
   background-color: #F5F5F5;
+  text-align: center;
 }
 
 .bcm-content .bcm-main img {
   height: auto;
   width: 95%;
-  overflow: hidden;
   margin: 2%;
 }
 
@@ -141,8 +143,31 @@ body {
   position: relative;
 }
 
+.bcm-content .bcm-sidebar .bcm-sidebar-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 0 5% 0;
+}
+
+.bcm-content .bcm-sidebar .bcm-sidebar-heading .bcm-sidebar-icon {
+  width: 10%;
+  opacity: 0.8;
+}
+
 .bcm-content .bcm-sidebar .bcm-comments {
-  overflow-y: scroll;
+  height: calc(100vh - 180px);
+  overflow-y: auto;
 }
 
 .bcm-content .bcm-sidebar .bcm-comments hr {
@@ -190,20 +215,25 @@ body {
 }
 
 .bcm-content .bcm-sidebar .bcm-commentbox {
-  height: 200px;
-  width: 90%;
+  width: 85%;
   position: absolute;
-  bottom: 0;
+  margin: 7%;
 }
 
-.bcm-content .bcm-sidebar .bcm-commentbox input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 2px solid #757575;
-  border-radius: 5px;
+@media only screen and (max-width: 740px) {
+  .bcm-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "main sidebar";
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .bcm-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "main" "sidebar";
+  }
 }
 
 /**   header  **/
