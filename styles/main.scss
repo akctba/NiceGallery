@@ -1,5 +1,7 @@
 @import './color';
+@import './fonts';
 // Alex's style
+
 
 // Bianca's style
 .bcm-content {
@@ -8,7 +10,7 @@
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-areas: "main sidebar";
-    font-family: 'Nunito', 'sans serif';
+    font-family: $font-family1;
 
     .bcm-main {
         grid-area: main;
@@ -59,14 +61,14 @@
                 h4 {
                     grid-area: user;
                     margin: 10px 0px 10px 0px;
-                    font-family: 'Nunito', sans-serif;
+                    font-family: $font-family1;
                     font-weight: 800;
                 }
 
                 p {
                     grid-area: comment;
                     margin: -25px 10px 10px 0px;
-                    font-family: 'Nunito', sans-serif;
+                    font-family: $font-family1;
                     font-weight: 400;
                 }
             }
@@ -93,7 +95,7 @@
 
 // Chris' style
 #head{
-    font-family: 'Lobster', cursive;
+    font-family: $font-family2;
     text-align: center;
 }
 // Henry's style
