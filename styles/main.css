@@ -114,7 +114,7 @@ body {
   -ms-grid-columns: 5fr 2fr;
       grid-template-columns: 5fr 2fr;
       grid-template-areas: "main sidebar";
-  font-family: 'Nunito', 'sans serif';
+  font-family: "Nunito", sans-serif;
 }
 
 .bcm-content .bcm-main {
@@ -201,7 +201,7 @@ body {
   -ms-grid-column: 2;
   grid-area: user;
   margin: 10px 0px 10px 0px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 800;
 }
 
@@ -210,7 +210,7 @@ body {
   -ms-grid-column: 2;
   grid-area: comment;
   margin: -25px 10px 10px 0px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
 }
 
@@ -220,13 +220,12 @@ body {
   margin: 7%;
 }
 
-.bcm-content .bcm-sidebar .bcm-commentbox input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 2px solid rgba(117, 117, 117, 0.5);
-  border-radius: 5px;
+@media only screen and (max-width: 740px) {
+  .bcm-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "main sidebar";
+  }
 }
 
 @media only screen and (max-width: 415px) {
@@ -234,14 +233,6 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "main" "sidebar";
-  }
-}
-
-@media only screen and (max-width: 740px) {
-  .bcm-content {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "main sidebar";
   }
 }
 

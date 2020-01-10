@@ -119,14 +119,14 @@ and (max-width : 415px) {
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-areas: "main sidebar";
-    font-family: 'Nunito', 'sans serif';
+    font-family: $font-family1;
 
     .bcm-main {
         grid-area: main;
         height: calc(100vh - 80px);
         overflow-y: auto;
         padding: 2%;
-        background-color: #F5F5F5;
+        background-color: $bcm-main-bg;
         text-align: center;
 
         img {
@@ -139,7 +139,7 @@ and (max-width : 415px) {
     .bcm-sidebar {
         grid-area: sidebar;
         padding: 3%;
-        background-color: #EBEBEB;
+        background-color: $bcm-sidebar-bg;
         position: relative;
 
         .bcm-sidebar-heading {
@@ -162,7 +162,7 @@ and (max-width : 415px) {
 
             hr {
                 width: 85%;
-                color: #757575;
+                color: $a_color;
             }
 
             .bcm-ind-comment {
@@ -184,14 +184,14 @@ and (max-width : 415px) {
                 h4 {
                     grid-area: user;
                     margin: 10px 0px 10px 0px;
-                    font-family: 'Nunito', sans-serif;
+                    font-family: $font-family1;
                     font-weight: 800;
                 }
 
                 p {
                     grid-area: comment;
                     margin: -25px 10px 10px 0px;
-                    font-family: 'Nunito', sans-serif;
+                    font-family: $font-family1;
                     font-weight: 400;
                 }
             }
@@ -202,24 +202,14 @@ and (max-width : 415px) {
             position: absolute;
             margin: 7%;
 
-            input[type=text] {
-                width: 100%;
-                padding: 12px 20px;
-                box-sizing: border-box;
-                border: 2px solid rgba(117, 117, 117, 0.5);
-                border-radius: 5px;
-            }
+            // input[type=text] {
+            //     width: 100%;
+            //     padding: 12px 20px;
+            //     box-sizing: border-box;
+            //     border: 2px solid $a_color;
+            //     border-radius: 5px;
+            // }
         }
-    }
-}
-
-
-@media only screen 
-and (max-width : 415px) {
-    .bcm-content {
-        grid-template-columns: 1fr;
-        grid-template-areas: "main"
-                            "sidebar";
     }
 }
 
@@ -228,6 +218,15 @@ and (max-width : 740px) {
     .bcm-content {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "main sidebar";
+    }
+}
+
+@media only screen 
+and (max-width : 415px) {
+    .bcm-content {
+        grid-template-columns: 1fr;
+        grid-template-areas: "main"
+                            "sidebar";
     }
 }
 
