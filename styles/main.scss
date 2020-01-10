@@ -1,5 +1,116 @@
 @import './color';
+body{
+    background-color: $color2;
+    padding-top:105px;
+    width:100%
+}
+
+/* Constants */
+$font-family1: 'Nunito', sans-serif;
+$font-family2: 'Lobster', cursive;
+
 // Alex's style
+.category-title-box {
+    background-color: $color2;
+    font-family: $font-family1;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .category-title {
+        text-align: center;
+    }
+}
+
+.category-nav {
+    background-color: darken($color2, 1%);
+    padding: 20px 0;    
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* fixing on top */
+    top: 0;
+    position: sticky;
+   
+    .category-left {
+        text-align: left;
+        a {
+            color: $color5;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $color1;
+        }
+    }
+    
+    .category-center {
+        text-align: center;
+    }
+    
+    .category-right {
+        text-align: right;
+        a {
+            color: $color5;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $color1;
+        }
+    }
+}
+
+.category-container {
+    background-color: $color2;
+    font-family: $font-family1;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .category-item {
+        margin: 0 auto;
+        padding: 30px 0;
+
+        .category-author {
+            font-size: 0.8em;
+            color: $color4;
+        }
+
+        .image-heading:hover {
+            color: $color1;
+        }
+    }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (max-width : 740px) {
+
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 415px) {
+
+    .category-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
 
 // Bianca's style
 .bcm-content {
@@ -30,9 +141,6 @@
         padding: 3%;
         background-color: #EBEBEB;
         position: relative;
-        // margin: 0 auto;
-
-        
 
         .bcm-sidebar-heading {
             display: flex;
@@ -102,15 +210,99 @@
                 border-radius: 5px;
             }
         }
-
     }
 }
 
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 415px) {
+    .bcm-content {
+        grid-template-columns: 1fr;
+        grid-template-areas: "main"
+                            "sidebar";
+    }
+}
+
+
+
 // Chris' style
+/**   header  **/
+#headcontainer{
+    position: fixed;
+    width:100%;
+    top:0;
+    background-color: $color2;
+   
+    
+}
 #head{
+    color:$color5;
+}
+h1{
     font-family: 'Lobster', cursive;
+    margin-top:1%;
+    margin-left:45%;
+}
+#icon_link{
+    margin-top:1%;
+    margin-left:10%;
+    margin-right:auto;
+}
+header{
+   display: flex;
+   text-align: center;
+    font-family: $font-family2;
     text-align: center;
 }
+nav{
+    display: flex;
+    background-color: $nav_bg_color;
+    border-bottom:1px solid gray;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    margin-right:15%;
+    
+}
+li{
+    padding:10px;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color:$a_color;
+}
+a:visited{
+    color:$a_color;
+}
+a:active{
+    color:$a_color;
+}
+a:hover{
+    color:$color1;
+}
+#search{
+    width:150px;
+    height:30px;
+    margin-right:3%;
+}
+/*
+p{
+    padding-top:100px;
+}
+*/
+/**   footer  **/
+    footer{
+        background-color: $color4;
+        text-align: center;
+         
+    }
+
+
+
 // Henry's style
 
 // Peri's style

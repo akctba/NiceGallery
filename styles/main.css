@@ -1,3 +1,111 @@
+body {
+  background-color: #FEFEFF;
+  padding-top: 105px;
+  width: 100%;
+}
+
+/* Constants */
+.category-title-box {
+  background-color: #FEFEFF;
+  font-family: "Nunito", sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.category-title-box .category-title {
+  text-align: center;
+}
+
+.category-nav {
+  background-color: #f9f9ff;
+  padding: 20px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  /* fixing on top */
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.category-nav .category-left {
+  text-align: left;
+}
+
+.category-nav .category-left a {
+  color: #020100;
+  text-decoration: none;
+}
+
+.category-nav .category-left a:hover {
+  color: #E0402F;
+}
+
+.category-nav .category-center {
+  text-align: center;
+}
+
+.category-nav .category-right {
+  text-align: right;
+}
+
+.category-nav .category-right a {
+  color: #020100;
+  text-decoration: none;
+}
+
+.category-nav .category-right a:hover {
+  color: #E0402F;
+}
+
+.category-container {
+  background-color: #FEFEFF;
+  font-family: "Nunito", sans-serif;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.category-container .category-item {
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.category-container .category-item .category-author {
+  font-size: 0.8em;
+  color: #757575;
+}
+
+.category-container .category-item .image-heading:hover {
+  color: #E0402F;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 740px) {
+  .category-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 415px) {
+  .category-nav {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .category-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .bcm-content {
   width: 90%;
   margin: 0 auto;
@@ -121,8 +229,103 @@
   border-radius: 5px;
 }
 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 415px) {
+  .bcm-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "main" "sidebar";
+  }
+}
+
+/**   header  **/
+#headcontainer {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #FEFEFF;
+}
+
 #head {
+  color: #020100;
+}
+
+h1 {
   font-family: 'Lobster', cursive;
+  margin-top: 1%;
+  margin-left: 45%;
+}
+
+#icon_link {
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f8f6f6;
+  border-bottom: 1px solid gray;
+}
+
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-right: 15%;
+}
+
+li {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #757575;
+}
+
+a:visited {
+  color: #757575;
+}
+
+a:active {
+  color: #757575;
+}
+
+a:hover {
+  color: #E0402F;
+}
+
+#search {
+  width: 150px;
+  height: 30px;
+  margin-right: 3%;
+}
+
+/*
+p{
+    padding-top:100px;
+}
+*/
+/**   footer  **/
+footer {
+  background-color: #757575;
   text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
